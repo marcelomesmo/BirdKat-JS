@@ -2,7 +2,7 @@ var gameImages = [];
 
 function Preloader ()
 {
-    var imageList = {
+    /*var imageList = {
     	// Splash Scene
     	splash: "assets/splash.png",
     	// Menu Scene
@@ -17,9 +17,12 @@ function Preloader ()
         weapon: "assets/weapon.png",
         bullet: "assets/bullet.png",
         dash: "assets/dash.png",
+        boss: "assets/boss.png",
+        warning: "assets/warning.png",
+        wall: "assets/wall.png",
         pipeTop: "assets/pipeNorth.png",
         pipeBottom: "assets/pipeSouth.png"
-    };
+    };*/
 
 	this.load = function(progressCallback) {
 		// Initialise variables	

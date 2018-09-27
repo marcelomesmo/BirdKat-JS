@@ -246,7 +246,8 @@ function Bird(imgName, sPosX, sPosY) {
             	//console.log("Touched pipe");
                 // Isn't between pipes. 
                 // Bird touched pipe.
-                this.Dead();
+                if(this.isDashing) p.DashKill();
+            	else this.Dead();
                 //return true;
             }
         }
@@ -263,9 +264,36 @@ function Bird(imgName, sPosX, sPosY) {
         //return false;
 	}
 
+	this.checkWallCollision = function(w)
+	{
+		// Simple straight ahead collision check. 
+        // Would create a separate collision(bird, wall) if I had more time.
+        // Reached wall
+        if(this.currPosX + this.w > w.X())
+        {
+        	if(this.isDashing) w.DashKill();
+            else this.Dead();
+
+            //return true;
+        }
+        //return false;
+
+        // Check bullet collissions
+        // Avoid calling another method
+        for(let b of weapon.getBullets())
+		{
+			if(b.X() + b.W() > w.X() && !b.HasHit())
+			{
+            	b.Hit();
+                w.Damage();
+			}
+		}
+	}
+
 	this.checkBullets = function(p)
 	{
 		// Simple straight ahead collision check.
+        // Would create a separate collision(obj, obj) if I had more time.
 
 		for(let b of weapon.getBullets())
 		{
@@ -282,6 +310,19 @@ function Bird(imgName, sPosX, sPosY) {
 	            }
 			}
 		}
+	}
+
+	this.checkBossCollision = function(boss)
+	{
+		// Simple straight ahead collision check. 
+        // Would create a separate collision(bird, wall) if I had more time.
+        // Reached wall
+        if(this.currPosX < boss.X() + boss.getWidth())
+        {
+        	this.Dead();
+            //return true;
+        }
+        //return false;
 	}
 
 	this.Score = function(s = 1)

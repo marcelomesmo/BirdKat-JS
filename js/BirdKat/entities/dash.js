@@ -13,13 +13,13 @@ function Dash() {
 
 	var reloadTime = 0;
 
-	var RELOAD_CD = 1500; //ms
+	var RELOAD_CD = 3000; //ms
 
 	this.Update = function(delta)
 	{
 		reloadTime += delta;
 
-		if(reloadTime > RELOAD_CD) 
+		if(reloadTime >= RELOAD_CD) 
 		{
 			dashCharges = 1;
 			reloadTime = 0;

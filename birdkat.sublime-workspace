@@ -4,12 +4,32 @@
 		"selected_items":
 		[
 			[
-				"fill",
-				"fillStyle"
+				"warnin",
+				"warningSign"
+			],
+			[
+				"warning",
+				"warningSign"
+			],
+			[
+				"warn",
+				"warningSign"
 			],
 			[
 				"is",
-				"isDashing"
+				"IsDashing"
+			],
+			[
+				"Wi",
+				"getWidth"
+			],
+			[
+				"wall",
+				"wallHolder"
+			],
+			[
+				"fill",
+				"fillStyle"
 			],
 			[
 				"curr",
@@ -164,28 +184,10 @@
 	"buffers":
 	[
 		{
-			"file": "js/BirdKat/entities/weapon.js",
+			"file": "js/BirdKat/scenes/GameScene.js",
 			"settings":
 			{
-				"buffer_size": 1547,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "js/BirdKat/entities/pipe.js",
-			"settings":
-			{
-				"buffer_size": 2042,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "js/BirdKat/entities/bullet.js",
-			"settings":
-			{
-				"buffer_size": 1078,
+				"buffer_size": 5416,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -229,6 +231,7 @@
 		"/Users/marcelo/Desktop/BirdKat/js",
 		"/Users/marcelo/Desktop/BirdKat/js/BirdKat",
 		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities",
+		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/scenes",
 		"/Users/marcelo/Desktop/BirdKat/js/buzz",
 		"/Users/marcelo/Desktop/BirdKat/js/engine",
 		"/Users/marcelo/Desktop/BirdKat/js/engine/data",
@@ -238,20 +241,27 @@
 	],
 	"file_history":
 	[
+		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities/dash.js",
+		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities/bird.js",
+		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/resources.js",
+		"/Users/marcelo/Desktop/BirdKat/js/engine/data/preloader.js",
+		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/scenes/GameScene.js",
+		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities/boss.js",
 		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities/pipe.js",
+		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities/wall.js",
+		"/Users/marcelo/Desktop/BirdKat/index.html",
+		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities/bullet.js",
+		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities/weapon.js",
 		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/GameScene.js",
 		"/Users/marcelo/Desktop/BirdKat/js/engine/entities/bird.js",
 		"/Users/marcelo/Desktop/BirdKat/js/engine/entities/weapon.js",
-		"/Users/marcelo/Desktop/BirdKat/index.html",
 		"/Users/marcelo/Desktop/BirdKat/js/engine/entities/boss.js",
 		"/Users/marcelo/Desktop/BirdKat/js/engine/entities/bullet.js",
 		"/Users/marcelo/Desktop/BirdKat/js/engine/entities/pipe.js",
 		"/Users/marcelo/Desktop/BirdKat/js/engine/entities/parallaxbg.js",
-		"/Users/marcelo/Desktop/BirdKat/js/engine/data/preloader.js",
 		"/Users/marcelo/Desktop/BirdKat/js/engine/graphics/graphics.js",
 		"/Users/marcelo/Desktop/BirdKat/js/engine/entities/dash.js",
 		"/Users/marcelo/Desktop/BirdKat/js/engine/input/touch.js",
-		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/resources.js",
 		"/Users/marcelo/Desktop/BirdKat/js/engine/input/inputmanager.js",
 		"/Users/marcelo/Desktop/BirdKat/js/engine/input/keyboard.js",
 		"/Users/marcelo/Desktop/BirdKat/js/engine/input/mouse.js",
@@ -358,14 +368,7 @@
 		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Thread.h",
 		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Thread.cpp",
 		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Text.h",
-		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Text.cpp",
-		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Shape.h",
-		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Resources.h",
-		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Resources.cpp",
-		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/ResourcePrototype.h",
-		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/ResourceManagerPrototype.h",
-		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/resource.h",
-		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Rectangle.h"
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Text.cpp"
 	],
 	"find":
 	{
@@ -383,6 +386,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"warning",
 			"clicked",
 			"startTime",
 			"height",
@@ -404,94 +408,37 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "js/BirdKat/entities/weapon.js",
+					"file": "js/BirdKat/scenes/GameScene.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1547,
+						"buffer_size": 5416,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1057,
-								1057
+								4462,
+								4462
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 625.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "js/BirdKat/entities/pipe.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2042,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								762,
-								762
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 166.0,
+						"translation.y": 2631.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "js/BirdKat/entities/bullet.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1078,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								159,
-								159
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]

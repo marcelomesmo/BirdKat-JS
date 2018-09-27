@@ -71,6 +71,12 @@ function Pipe() {
 		return this.outScreen;
 	}
 
+
+	this.DashKill = function()
+	{
+		this.hitpoints = 0;
+	}
+
 	this.Damage = function()
 	{
 		this.hitpoints--;
