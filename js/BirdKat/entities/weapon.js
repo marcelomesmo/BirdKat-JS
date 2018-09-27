@@ -59,7 +59,12 @@ function Weapon() {
 
 			reloadTime = 0;
 
+			var randomSpawn = Math.floor(Math.random() * (5 - (-5) +1)) + (-5);
 			var b = new Bullet(x, y);
+			bullets.push(b);
+			var b = new Bullet(x+30 +randomSpawn, y+randomSpawn);
+			bullets.push(b);
+			var b = new Bullet(x+60 +randomSpawn, y+randomSpawn*2);
 			bullets.push(b);
 
 			// SFX

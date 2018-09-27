@@ -6,7 +6,7 @@ function Bullet(x, y) {
 	// Absolute positions
 	var currPosX, currPosY;
 
-	var BULLET_SPEED = 1;
+	var BULLET_SPEED = Math.random() * (0.302 - 0.301) + (0.301);
 
 	var w, h;
 

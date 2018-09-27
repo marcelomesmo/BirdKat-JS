@@ -7,8 +7,8 @@ function Pipe() {
 	var velX;
 
 	var topDistance;
-	var MIN_TOP_DIST = -20;
-	var MAX_TOP_DIST = 60;
+	var MIN_TOP_DIST = 20;
+	var MAX_TOP_DIST = 100;
 	var gapDistance;
 	var MIN_GAP = 60;
 	var MAX_GAP = 120;
@@ -42,7 +42,7 @@ function Pipe() {
 	this.outScreen = false;
 	this.hasScored = false;
 
-	this.hitpoints = 6;
+	this.hitpoints = 18;
 
 	this.Update = function(delta)
 	{
