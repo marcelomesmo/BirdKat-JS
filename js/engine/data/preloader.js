@@ -9,9 +9,16 @@ function Preloader ()
         menu: "assets/bgMenu.png",
         // Game Scene
         bg: "assets/bg3.png",
+        bg_front: "assets/bg_front.png",
+        bg_mid: "assets/bg_mid.png",
+        bg_far: "assets/bg_far.png",
+        fire: "assets/fire.png",
         bird: "assets/bird.png",
         weapon: "assets/weapon.png",
-        dash: "assets/dash.png"
+        bullet: "assets/bullet.png",
+        dash: "assets/dash.png",
+        pipeTop: "assets/pipeNorth.png",
+        pipeBottom: "assets/pipeSouth.png"
     };
 
 	this.load = function(progressCallback) {
@@ -56,7 +63,7 @@ function Preloader ()
 		{
 			if(gameImages[i].name == name) 
 			{
-				console.log("File found: " + gameImages[i].name);
+				//console.log("File found: " + gameImages[i].name);
 				return gameImages[i];
 			}
 		}

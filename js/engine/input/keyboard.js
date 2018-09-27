@@ -1,5 +1,7 @@
 var KEY = {
     SPACE: 32,
+    D: 68,
+    P: 80,
     X: 88
 }
 
@@ -7,6 +9,8 @@ function KeyboardController()
 {
     var keyPressed = {
         SPACE: false,
+        D: false,
+        P: false,
         X: false
     };
 
@@ -23,6 +27,8 @@ function KeyboardController()
     this.Clear = function()
     {
         keyPressed.SPACE = false;
+        keyPressed.D = false;
+        keyPressed.P = false;
         keyPressed.X = false;
     }
 
@@ -32,6 +38,16 @@ function KeyboardController()
         if(e == KEY.SPACE)
         {
             return keyPressed.SPACE;
+        }
+
+        if(e == KEY.D)
+        {
+            return keyPressed.D;
+        }
+
+        if(e == KEY.P)
+        {
+            return keyPressed.P;
         }
 
         if(e == KEY.X)
@@ -49,6 +65,12 @@ function KeyboardController()
         if (keyCode == KEY.SPACE) {
             keyPressed.SPACE = true;
         }
+        else if (keyCode == KEY.D) {
+            keyPressed.D = true;
+        }
+        else if (keyCode == KEY.P) {
+            keyPressed.P = true;
+        }
         else if (keyCode == KEY.X) {
             keyPressed.X = true;
         }
@@ -62,6 +84,12 @@ function KeyboardController()
 
         if (keyCode == KEY.SPACE) {
             keyPressed.SPACE = false;
+        }
+        else if (keyCode == KEY.D) {
+            keyPressed.D = false;
+        }
+        else if (keyCode == KEY.P) {
+            keyPressed.P = false;
         }
         else if (keyCode == KEY.X) {
             keyPressed.X = false;

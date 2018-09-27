@@ -87,7 +87,7 @@ function Graphics()
 		*/
 	}
 
-	this.drawText = function(text, x, y, color, font)
+	this.DrawText = function(text, x, y, color, font)
 	{
 		context.fillStyle = color;
     	context.font = font;
@@ -108,6 +108,13 @@ function Graphics()
 	this.DrawRect = function(x,y, w, h)
 	{
 		context.fillRect(x, y, w, h);
+	}
+
+	this.FillScreen = function(color)
+	{
+		context.fillStyle = color;
+		context.fillRect(0, 0, localcanvas.width, localcanvas.height);
+		context.fillStyle = "black";
 	}
 
 	this.Draw = function(img, x, y)

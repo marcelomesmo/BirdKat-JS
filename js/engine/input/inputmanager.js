@@ -19,7 +19,7 @@ function InputManager()
 	this.Clear = function()
 	{
 		Mouse.Clear();
-		//Touch.Update();
+		Touch.Clear();
 		Keyboard.Clear();
 	}
 }

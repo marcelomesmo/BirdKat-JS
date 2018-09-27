@@ -5,19 +5,21 @@ function Dash() {
 
 	var totalCharges = 1;
 	var dashCharges = 1;
-//	var weaponCD = 0.3;
-	var barW = 60;
-	var barH = 14;
+
+	var barWidth = 60;
+	var barHeight = 10;
 
 	var power = 100;
 
 	var reloadTime = 0;
 
+	var RELOAD_CD = 1500; //ms
+
 	this.Update = function(delta)
 	{
 		reloadTime += delta;
 
-		if(reloadTime > 500) 
+		if(reloadTime > RELOAD_CD) 
 		{
 			dashCharges = 1;
 			reloadTime = 0;
@@ -28,7 +30,8 @@ function Dash() {
 	{
 		graph.Draw(image, x, y);
 
-		graph.DrawRect(x + image.width, y, barW * dashCharges/totalCharges, barH);
+		if(dashCharges == totalCharges) graph.DrawRect(x + image.width + 10, y+4, barWidth, barHeight);
+		else graph.DrawRect(x + image.width + 10, y+4, barWidth * reloadTime/RELOAD_CD, barHeight);
 	}
 
 	this.isAvailable = function()
@@ -45,7 +48,7 @@ function Dash() {
 
 	this.Reload = function()
 	{
-		if(dashCharges < totalCharges) dashCharges++;
+		dashCharges = totalCharges;
 	}
 
 	this.getPower = function()

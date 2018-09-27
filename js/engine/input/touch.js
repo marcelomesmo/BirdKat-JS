@@ -1,9 +1,15 @@
 function TouchController()
 {
-  var X = 0;
-  var Y = 0;
+  var startX = 0;
+  var startY = 0
+  var endX = 0;
+  var endY = 0;
 
-  var touchpress = false;
+  var touchControl = {
+    PRESSED: false,
+    DOWN: false,
+    RELEASED: false
+  };
 
   this.Init = function()
   {
@@ -13,18 +19,39 @@ function TouchController()
       console.log("Touch Input Initialized.");
   }
 
+  this.Clear = function()
+  {
+      startX = 0;
+      startY = 0;
+
+      endX = 0;
+      endY = 0;
+
+      touchControl.PRESSED = false;
+      touchControl.RELEASED = false;
+  }
+
+  this.IsTouchPressed = function()
+  {
+      return touchControl.PRESSED;
+  }
+
   this.IsTouching = function()
   {
-    return this.touchpress;
+      return touchControl.DOWN;
   }
 
   OnTouchStart = function()
   {
-    Touch.touchpress = true;
+      // X = event.touchX;
+      // Y = event.touchY;
+      touchControl.PRESSED = true;
+      touchControl.DOWN = true; 
   }
 
   OnTouchEnd = function() 
   {
-    Touch.touchpress = false;
+      touchControl.RELEASED = true;
+      touchControl.DOWN = false;
   }
 }
