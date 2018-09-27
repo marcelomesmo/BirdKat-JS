@@ -1,0 +1,623 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tar",
+				"targetHeight"
+			],
+			[
+				"targe",
+				"targetWidth"
+			],
+			[
+				"sPos",
+				"sPosX"
+			],
+			[
+				"new",
+				"newWidth"
+			],
+			[
+				"dev",
+				"deviceHeight"
+			],
+			[
+				"devi",
+				"deviceWidth"
+			],
+			[
+				"device",
+				"deviceHeight"
+			],
+			[
+				"high",
+				"higherScale"
+			],
+			[
+				"get",
+				"getWidth"
+			],
+			[
+				"currP",
+				"currPosY"
+			],
+			[
+				"g",
+				"Graphics"
+			],
+			[
+				"star",
+				"startPosY"
+			],
+			[
+				"y",
+				"startPosY"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "js/engine/game.js",
+			"settings":
+			{
+				"buffer_size": 1345,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/main.js",
+			"settings":
+			{
+				"buffer_size": 1011,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/engine/scenes/scene.js",
+			"settings":
+			{
+				"buffer_size": 294,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/resources/SplashScene.js",
+			"settings":
+			{
+				"buffer_size": 333,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/engine/input/keyboard.js",
+			"settings":
+			{
+				"buffer_size": 486,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/engine/entities/bird.js",
+			"settings":
+			{
+				"buffer_size": 1080,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 763,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/marcelo/Desktop/BirdKat",
+		"/Users/marcelo/Desktop/BirdKat/assets",
+		"/Users/marcelo/Desktop/BirdKat/js",
+		"/Users/marcelo/Desktop/BirdKat/js/engine",
+		"/Users/marcelo/Desktop/BirdKat/js/engine/graphics",
+		"/Users/marcelo/Desktop/BirdKat/js/engine/input",
+		"/Users/marcelo/Desktop/BirdKat/js/engine/scenes",
+		"/Users/marcelo/Desktop/BirdKat/js/resources"
+	],
+	"file_history":
+	[
+		"/Users/marcelo/Desktop/BirdKat/js/main.js",
+		"/Users/marcelo/Desktop/BirdKat/js/engine/graphics/graphics.js",
+		"/Users/marcelo/Desktop/BirdKat/js/engine/scenes/scene.js",
+		"/Users/marcelo/Desktop/BirdKat/js/resources/GameScene.js",
+		"/Users/marcelo/Desktop/BirdKat/js/resources/MenuScene.js",
+		"/Users/marcelo/Desktop/BirdKat/js/resources/SplashScene.js",
+		"/Users/marcelo/Desktop/BirdKat/js/engine/scenes/Scene",
+		"/Users/marcelo/Desktop/BirdKat/js/engine/input/keyboard.js",
+		"/Users/marcelo/Desktop/BirdKat/js/soundmanager.js",
+		"/Users/marcelo/Desktop/BirdKat/index.html",
+		"/Users/marcelo/Downloads/flappyBird/flappyBird.js",
+		"/Users/marcelo/Desktop/BirdKat/js/engine/graphics/sprite.js",
+		"/Users/marcelo/Desktop/BirdKat/css/main.css",
+		"/Users/marcelo/Desktop/BirdKat/css/reset.css",
+		"/Users/marcelo/Desktop/BirdKat/js/engine/game.js",
+		"/Users/marcelo/Desktop/BirdKat/js/game.js",
+		"/Users/marcelo/Desktop/BirdKat/js/engine/graphics.js",
+		"/Users/marcelo/Downloads/flappyBird/index.html",
+		"/Users/marcelo/Desktop/BirdKat/js/engine/input/touch.js",
+		"/Users/marcelo/Desktop/BirdKat/js/engine/entities/pipe.js",
+		"/Users/marcelo/Desktop/BirdKat/index2.html",
+		"/Users/marcelo/Desktop/BirdKat/js/jquery.min.js",
+		"/Users/marcelo/Desktop/BirdKat/js/jquery.transit.min.js",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/_includes/thumbnails.html",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/css/3-sections/_thumbnails.sass",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/oficina/temas.md",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/games/game-3 copy.md",
+		"/Users/marcelo/Documents/GitHub/game-1.md",
+		"/Users/marcelo/Documents/GitHub/game-2.md",
+		"/Users/marcelo/Documents/GitHub/game-3.md",
+		"/Users/marcelo/Documents/GitHub/game-4.md",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/CNAME",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/_config.yml",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/_layouts/default.html",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/_data/settings.yml",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/_data/layout.yml",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/games/game-1.md",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/games/game-4/monsters3.png",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/games/game-4/monsters2.png",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/games/game-4/monsters1.png",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/games/game-3/thumb.jpg",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/games/game-3/googleplay/dr gp2.png",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/_includes/disqus.html",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/_posts/2014-01-01-text-formatting-examples.md",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/_posts/2017-01-01-getting-started.md",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/css/1-tools/bourbon/addons/_clearfix.scss",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/css/1-tools/bourbon/addons/_html5-input-types.scss",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/css/1-tools/bourbon/addons/_timing-functions.scss",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/css/1-tools/bourbon/css3/_animation.scss",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/css/1-tools/bourbon/css3/_hidpi-media-query.scss",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/css/1-tools/bourbon/functions/_color-lightness.scss",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/css/1-tools/bourbon/helpers/_convert-units.scss",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/css/1-tools/bourbon/helpers/_str-to-num.scss",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/games/game-1/thumb.jpg",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/games/game-2/cover2.png",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/games/game-2/example1.png",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/games/game-2/googleplay/dtm gp1.png",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/games/game-2/googleplay/dtm gp2.png",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/games/game-2/googleplay/dtm gp3.png",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/games/game-2/googleplay/dtm gp4.png",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/games/game-3/dr1.png",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/games/game-3/dr2.png",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/games/game-3/googleplay/dr gp1.png",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/games/game-4/thumb.jpg",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/influencemap/mapa-de-influencia-BIG.gif",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/oficina/arte.png",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/oficina/criatividade.png",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/profile2.png",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/projects/proj-1/thumb.jpg",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/projects/proj-3/thumb.jpg",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/projects/proj-3/thumb2.jpg",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/js/functions.js",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/LICENSE",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/.gitignore",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/oficina/mecanica.png",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/oficina/melhor.png",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/oficina/mencao.png",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/oficina/premios.png",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/oficina/premios2.png",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/assets/img/profile.png",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/projects/proj-2.md",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/projects/proj-3.md",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/games/game-4.md",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/games/game-3.md",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/games/game-2.md",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/projects/proj-1.md",
+		"/Users/marcelo/Documents/GitHub/marcelomesmo.github.io/games/game-6.md",
+		"/Volumes/MARCELO/Marcelo/GitHub/Reis/Reis/Reis.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Reis/Reis/input/Input.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/TmxMapObject.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/TmxMapObject.cpp",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/TmxMap.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/TmxMap.cpp",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Timer.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Timer.cpp",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/TileSet.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/TileSet.cpp",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/TileMap.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/TileMap.cpp",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Tile.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Tile.cpp",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Thread.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Thread.cpp",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Text.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Text.cpp",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Shape.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Resources.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Resources.cpp",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/ResourcePrototype.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/ResourceManagerPrototype.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/resource.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Rectangle.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/PlayState.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Rectangle.cpp",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/PlayState.cpp",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Player.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Player.cpp",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/NLTmxMap.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/NLTmxMap.cpp",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/NetworkThread.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/NetworkThread.cpp",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/NetworkConfig.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Jumper.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/IntroState.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/IntroState.cpp",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/InputManager.h",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/InputManager.cpp",
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/InputDefinitions.h"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"height",
+			"bird"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "js/engine/game.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1345,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								728,
+								728
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 72.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1011,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								105,
+								105
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/engine/scenes/scene.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 294,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								122,
+								122
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/resources/SplashScene.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 333,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								281,
+								281
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/engine/input/keyboard.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 486,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								54,
+								400
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "js/engine/entities/bird.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1080,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								394,
+								394
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 239.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 763,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								650,
+								650
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "birdkat.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 261.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

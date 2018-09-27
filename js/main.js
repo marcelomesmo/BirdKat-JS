@@ -22,10 +22,10 @@ function Setup()
 {
 	game.Init();
 
-	// Is this the best way?
-	game.AddScene(new SplashScene());
-	//game.pushScene(new MenuScene());
-	//game.pushScene(new GameScene());
+	// First Scene
+	//game.AddScene(new SplashScene());
+	// Debug
+	game.AddScene(new GameScene());
 
 	// Start Game after Init
 	requestAnimationFrame(MainLoop);

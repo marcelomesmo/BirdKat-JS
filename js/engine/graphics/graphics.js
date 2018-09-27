@@ -87,6 +87,19 @@ function Graphics()
 		*/
 	}
 
+	this.drawText = function(text, x, y, color, font)
+	{
+		context.fillStyle = color;
+    	context.font = font;
+    	context.fillText(text,x,y);
+	}
+
+	this.setAlpha = function(a)
+	{
+		context.globalAlpha = a;
+		context.fillStyle = "black";
+	}
+
 	this.Clear = function()
 	{
 		context.clearRect(0, 0, localcanvas.width, localcanvas.height);

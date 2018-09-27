@@ -48,6 +48,7 @@ function Game()
 		if(scene)
 		{
 			scene.Update(delta);
+			Input.Clear();
 		}
 	}
 

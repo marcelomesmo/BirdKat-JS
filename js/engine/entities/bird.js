@@ -1,55 +1,124 @@
 // CONST
-var JUMPSTREGHT = -4;
-var GRAVITY = 0.25;
+var JUMPSTREGHT = -2;
+var GRAVITY = 0.1;
 
 // Game related
-var score;
+var score = 0;
 
 /*
 	Our pretty much awesome BirdKat shooter.
 
 */
+
 function Bird(imgName, sPosX, sPosY) {
 
-	var image = loader.getFile(imgName);//new Image();//new Sprite("assets/bird.png");
-	//this.image.src = "assets/bird.png";
+	var image = loader.getFile(imgName);
+
+	var weapon = new Weapon();
+
+	var dash = new Dash();
+	var isDashing;
+	var dashTime;
 
 	// Absolute positions
 	var startPosX, startPosY;
 	var currPosX, currPosY;
 
-	var velX, velY;
+	var velX;
+	var velY;
+
+	this.velX = this.velY = 0;
 
 	// Init positions
 	this.startPosX = this.currPosX = sPosX;
 	this.startPosY = this.currPosY = sPosY;
 
-	console.log("Bird at X " + this.currPosX + " Y " + this.currPosY);
+	this.isDashing = false;
+	this.dashTime = 0;
 
-	this.Update = function()
+	//console.log("Bird at X " + this.currPosX + " Y " + this.currPosY);
+
+	// Update Bird speed and position
+	this.Update = function(delta)
 	{
-		// Update Bird speed and position
-		this.velY += GRAVITY;
-		this.currPosY += velocity;
 
-		if(this.currPosY > height)
-		{
-			this.currPosY = height;
-			this.Hover();
+		/*
+			#### DASH POWER ####
+		*/
+		this.velX = 0;
+
+			if(/*Mouse.IsMouseSwiped(SWIPE.RIGHT) ||*/ Keyboard.IsKeyPressed(KEY.X))
+			{
+				this.Dash();
+			}
+			
+		if(this.isDashing)
+			{
+				if(this.dashTime > 300) this.velX = -100;
+
+			}
+
+		this.currPosX += this.velX * delta/10;
+
+		if(this.isDashing)
+			{
+				if(this.currPosX < this.startPosX) {
+			this.currPosX = this.startPosX;
+			this.isDashing = false;
+			this.dashTime = 0;
+		 	}
+
+		this.dashTime += delta;
 		}
 
-		if(this.currPosY < 0)
+		
+		if(!this.isDashing)
 		{
-			this.currPosY = 0;
-			this.Hover();
+			
+
+			/*
+			#### JUMP&SHOOT POWER ####
+			*/
+			this.velY += GRAVITY;
+
+			if(Mouse.IsMousePressed() || Keyboard.IsKeyPressed(KEY.SPACE))
+			{
+				this.Flap();
+				this.Shoot();
+			}
+
+			this.currPosY += this.velY * delta/10;
+
+		    /*
+		    	#### DYING ####
+		    */
+			if(this.currPosY > graph.getHeight())
+			{
+				this.Dead();
+			}
+
+			/*
+				#### HIT THE CEILING ####
+			*/
+			if(this.currPosY < 0)
+			{
+				this.currPosY = 0;
+				this.Hover();
+			}
+
+			weapon.Update(delta);
 		}
+
+		dash.Update(delta);
 	}
-	
-	/*this.Draw = function ()
+
+	this.Draw = function ()
 	{
-		//graph.Draw(this.image.getSprite(), this.currPosX, this.currPosY);
-		this.image.Draw(this.currPosX, this.currPosY);
-	}*/
+		graph.Draw(image, this.currPosX, this.currPosY);
+
+		weapon.Draw(10, 10);
+		dash.Draw(10, 26);
+	}
 
 
 	this.Hover = function()
@@ -59,31 +128,42 @@ function Bird(imgName, sPosX, sPosY) {
 
 	this.Flap = function()
 	{
-	   this.velY = JUMPSTREGHT;
-	   println("Bird vel Y: ", this.velY);
-	   // SFX
-	   //soundJump.stop();
-	   soundJump.play();
+		this.velY = JUMPSTREGHT;
+		// SFX
+		sfxJump.stop();
+		sfxJump.play();
 	}
 
 	this.Dead = function()
 	{
-
+		// SFX
+	   	sfxDie.stop();
+	   	sfxDie.play();
 	}
 
 	this.Dash = function()
 	{
-
+		if(dash.isAvailable())
+		{
+			this.isDashing = true;
+			this.velX = dash.getPower();
+			dash.Use();
+		}
+		// SFX
+	   	sfxJump.stop();
+	   	sfxJump.play();
 	}
 
 	this.Shoot = function()
 	{
-
+		weapon.Shoot();
+		// SFX
+	   	sfxHit.stop();
+	   	sfxHit.play();
 	}
 
-	//this.getSprite = function ()
 	this.getImage = function ()
 	{
-		return image;//this.image.getSpriteImage();
+		return image;
 	}
 }

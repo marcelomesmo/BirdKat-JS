@@ -15,4 +15,11 @@ function InputManager()
 		Touch.Init();
 		Keyboard.Init();
 	}
+
+	this.Clear = function()
+	{
+		Mouse.Clear();
+		//Touch.Update();
+		Keyboard.Clear();
+	}
 }

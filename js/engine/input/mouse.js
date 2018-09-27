@@ -3,28 +3,55 @@ function MouseController()
 	// var X = 0;
 	// var Y = 0;
 
-	var mousepress = false;
+	var mouseControl = {
+		PRESSED: false,
+		DOWN: false,
+		RELEASED: false
+	};
+
+	//var mousepress = false;
 
 	this.Init = function()
 	{
-	    graph.getCanvas().addEventListener("mousedown", OnMouseDown);
-	    graph.getCanvas().addEventListener("mouseup", OnMouseUp);
+	    graph.getCanvas().addEventListener("mousedown", this.OnMouseDown);
+	    graph.getCanvas().addEventListener("mouseup", this.OnMouseUp);
 
 	    console.log("Mouse Input Initialized.");
 	}
 
+	this.Clear = function()
+	{
+		// Clear mouse presses and releases
+		mouseControl.PRESSED = false;
+		mouseControl.RELEASED = false;
+		// mouse DOWN only clean up when released
+	}
+
 	this.IsMouseDown = function()
 	{
-		return this.mousepress;
+		return mouseControl.DOWN;
 	}
 
-	OnMouseDown = function()
+	this.IsMousePressed = function()
 	{
-		Mouse.mousepress = true;
+		return mouseControl.PRESSED;
 	}
 
-	OnMouseUp = function() 
+	this.IsMouseReleased = function()
 	{
-		Mouse.mousepress = false;
+		return mouseControl.RELEASED;
+	}
+
+	this.OnMouseDown = function()
+	{
+		//$(graph.getCanvas()).trigger('mouseClick');
+		mouseControl.PRESSED = true;
+		mouseControl.DOWN = true;	
+	}
+
+	this.OnMouseUp = function() 
+	{
+		mouseControl.RELEASED = true;
+		mouseControl.DOWN = false;
 	}
 }

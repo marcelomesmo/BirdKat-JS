@@ -5,57 +5,67 @@ var KEY = {
 
 function KeyboardController()
 {
-
-    var KeyPressed = [0, 0];    // Space and X
+    var keyPressed = {
+        SPACE: false,
+        X: false
+    };
 
     this.Init = function()
     {
-        var spacepress = false;
-        var xpress = false;
 
         //graph.getCanvas().addEventListener('keydown', OnKeyDown);
-        document.addEventListener("keydown", OnKeyDown);
-        document.addEventListener("keyup", OnKeyUp);
+        document.addEventListener("keydown", this.OnKeyDown);
+        document.addEventListener("keyup", this.OnKeyUp);
 
         console.log("Keyboard Input Initialized.");
     }
 
-    this.IsPressed = function(e)
+    this.Clear = function()
+    {
+        keyPressed.SPACE = false;
+        keyPressed.X = false;
+    }
+
+    this.IsKeyPressed = function(e)
     {
         // Could handle this better with more time
-        if(e == KEY.SPACE && KeyPressed[0] == 1)
+        if(e == KEY.SPACE)
         {
-            return true;
+            return keyPressed.SPACE;
         }
 
-        if(e == KEY.X && KeyPressed[1] == 1)
+        if(e == KEY.X)
         {
-            return true;
+            return keyPressed.X;
         }
 
         return false;
     }
 
-    OnKeyDown = function(e)
+    this.OnKeyDown = function(e)
     {
         var keyCode = e.keyCode;
         
         if (keyCode == KEY.SPACE) {
-            spacepress = true;
-            KeyPressed[0] = 1;
+            keyPressed.SPACE = true;
         }
         else if (keyCode == KEY.X) {
-            xpress = true;
-            KeyPressed[1] = 1;
+            keyPressed.X = true;
         }
 
         //console.log("Keyboard pressed: " + String.fromCharCode(e.keyCode));
     }
 
-    OnKeyUp = function(e)
+    this.OnKeyUp = function(e)
     {
-        KeyPressed = [0, 0];
+        var keyCode = e.keyCode;
 
+        if (keyCode == KEY.SPACE) {
+            keyPressed.SPACE = false;
+        }
+        else if (keyCode == KEY.X) {
+            keyPressed.X = false;
+        }
         //console.log("Keyboard relased: " + String.fromCharCode(e.keyCode));
     }
 }

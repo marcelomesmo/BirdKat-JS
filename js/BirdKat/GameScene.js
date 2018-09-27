@@ -11,13 +11,13 @@ function GameScene() {
 
     this.Update = function (delta)
     {
-        
+        bird.Update(delta);   
     }
 
     this.Draw = function ()
     {
         graph.Draw(bgGame, 0, 0);
-        graph.Draw(bird.getImage(), bird.currPosX, bird.currPosY);
+        bird.Draw();
     }
 
     this.OnEnter = function()

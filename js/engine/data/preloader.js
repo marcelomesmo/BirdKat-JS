@@ -3,10 +3,15 @@ var gameImages = [];
 function Preloader ()
 {
     var imageList = {
+    	// Splash Scene
     	splash: "assets/splash.png",
-        bird: "assets/bird.png",
+    	// Menu Scene
+        menu: "assets/bgMenu.png",
+        // Game Scene
         bg: "assets/bg3.png",
-        menu: "assets/bgMenu.png"
+        bird: "assets/bird.png",
+        weapon: "assets/weapon.png",
+        dash: "assets/dash.png"
     };
 
 	this.load = function(progressCallback) {
