@@ -23,9 +23,9 @@ function Setup()
 	game.Init();
 
 	// First Scene
-	//game.AddScene(new SplashScene());
+	game.AddScene(new SplashScene());
 	// Debug
-	game.AddScene(new GameScene());
+	//game.AddScene(new GameScene());
 
 	// Start Game after Init
 	requestAnimationFrame(MainLoop);
