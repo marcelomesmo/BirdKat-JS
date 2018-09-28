@@ -5,6 +5,5 @@ JavaScript 2D Framework
     
     
     
-DISCLAIMER:  
-All assets belong to me.  
+DISCLAIMER:   
 Sounds from opengameart.org.  
