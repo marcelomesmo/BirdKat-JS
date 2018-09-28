@@ -41,11 +41,14 @@ function MenuScene() {
             graph.setAlpha(fadeInProgress);
             graph.DrawRect(0, 0, graph.getWidth(), graph.getHeight());    
         }
+        graph.setAlpha(1);
     }
 
     this.OnEnter = function()
     {
         bgMenu = loader.getFile("menu");
+
+        musicMenu.play();
     }
 
     this.OnExit  = function()

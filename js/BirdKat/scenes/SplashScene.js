@@ -45,6 +45,7 @@ function SplashScene() {
             graph.setAlpha(fadeInProgress);
             graph.DrawRect(0, 0, graph.getWidth(), graph.getHeight());    
         }
+        graph.setAlpha(1);
     }
 
     this.OnEnter = function()

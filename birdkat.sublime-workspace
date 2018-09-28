@@ -227,6 +227,24 @@
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "js/engine/data/soundmanager.js",
+			"settings":
+			{
+				"buffer_size": 705,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/BirdKat/scenes/MenuScene.js",
+			"settings":
+			{
+				"buffer_size": 1219,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -263,6 +281,7 @@
 	[
 		"/Users/marcelo/Desktop/BirdKat",
 		"/Users/marcelo/Desktop/BirdKat/assets",
+		"/Users/marcelo/Desktop/BirdKat/assets/sounds",
 		"/Users/marcelo/Desktop/BirdKat/js",
 		"/Users/marcelo/Desktop/BirdKat/js/BirdKat",
 		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities",
@@ -277,6 +296,8 @@
 	"file_history":
 	[
 		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/scenes/GameScene.js",
+		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/scenes/SplashScene.js",
+		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/scenes/Find Results",
 		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities/bird.js",
 		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities/parallaxbg.js",
 		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/resources.js",
@@ -401,9 +422,7 @@
 		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/TileSet.cpp",
 		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/TileMap.h",
 		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/TileMap.cpp",
-		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Tile.h",
-		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Tile.cpp",
-		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Thread.h"
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Tile.h"
 	],
 	"find":
 	{
@@ -414,6 +433,7 @@
 		"height": 101.0,
 		"where_history":
 		[
+			"/Users/marcelo/Desktop/BirdKat"
 		]
 	},
 	"find_state":
@@ -421,6 +441,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"setAlpha",
 			"image",
 			"warningSign",
 			"warning",
@@ -445,7 +466,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -471,6 +492,64 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/engine/data/soundmanager.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 705,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								616,
+								616
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/BirdKat/scenes/MenuScene.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1219,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1167,
+								1141
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 188.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

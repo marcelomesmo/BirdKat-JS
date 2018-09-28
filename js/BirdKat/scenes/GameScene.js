@@ -68,6 +68,9 @@ function GameScene() {
                 
                 restartTime = 0;
                 score = 0;
+
+                musicGame.stop();
+                musicGame.play();
             }
         }   
         else bird.Update(delta);
@@ -222,6 +225,10 @@ function GameScene() {
 
     this.OnEnter = function()
     {
+
+        musicMenu.stop();
+        musicGame.play();
+
         bgGame = new ParallaxBg();
 
         warningSign = new Animation("warning", 64, 64, 300);
