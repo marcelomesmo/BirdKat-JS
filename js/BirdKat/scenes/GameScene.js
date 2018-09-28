@@ -56,9 +56,11 @@ function GameScene() {
                 
                 wallHolder.splice(0, wallHolder.length);    // Clear walls.
                 wallSpawnTime = 0;
+                warningWall = false;
                 
                 boss.Restart();
                 bossAtkTime = 0;
+                warningBoss = false;
                 
                 bird.Rebirth();
                 

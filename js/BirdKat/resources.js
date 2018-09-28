@@ -7,7 +7,6 @@ var imageList = {
     // Menu Scene
     menu: "assets/bgMenu.png",
     // Game Scene
-    bg: "assets/bg3.png",
     bg_front: "assets/bg_front.png",
     bg_mid: "assets/bg_mid.png",
     bg_far: "assets/bg_far.png",

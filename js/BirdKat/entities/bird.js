@@ -11,6 +11,9 @@ function Bird(imgName, sPosX, sPosY) {
 
 	var image = loader.getFile(imgName);
 
+	var animFly = new Animation("birdFly", 47, 51, 300);
+	var animOff = new Animation("birdOff", 47, 51, 300);
+
 	var weapon = new Weapon();
 
 	var dash = new Dash();
@@ -49,6 +52,17 @@ function Bird(imgName, sPosX, sPosY) {
 	// State
 	this.isDead = false;
 	this.score = 0;
+
+	// Could handle this better with more time
+	var boundingBox =
+	{
+		x: 0,
+		y: 0,
+		offsetX: 10,	//	Align box to the middle of image
+		offsetY: 5,		//
+		w: 25,
+		h: 35
+	}
 
 	/*
 		Update Bird speed and position
@@ -120,11 +134,21 @@ function Bird(imgName, sPosX, sPosY) {
 		}
 
 		dash.Update(delta);
+
+		if(this.velY < 0) animFly.Update(delta);
+		else animOff.Update(delta);
+
+		// Bounding box
+		boundingBox.x = this.currPosX + boundingBox.offsetX;
+		boundingBox.y = this.currPosY + boundingBox.offsetY;
 	}
 
 	this.Draw = function ()
 	{
-		graph.Draw(image, this.currPosX, this.currPosY);
+		//graph.Draw(image, this.currPosX, this.currPosY);
+
+		if(this.velY < 0) animFly.Draw(this.currPosX, this.currPosY);
+		else animOff.Draw(this.currPosX, this.currPosY);
 
 		weapon.Draw(10, 0);
 		dash.Draw(10, 28);
@@ -141,8 +165,8 @@ function Bird(imgName, sPosX, sPosY) {
 			graph.setAlpha(1);
 		}
 
-		// DEBUG BOX
-		// graph.DrawRect(this.currPosX, this.currPosY, this.w, this.h);
+		// DEBUG MODE : BOUNDING BOX
+		//graph.DrawRect(boundingBox.x, boundingBox.y, boundingBox.w, boundingBox.h);
 	}
 
 
@@ -161,11 +185,15 @@ function Bird(imgName, sPosX, sPosY) {
 
 	this.Dead = function()
 	{
-		// SFX
-	   	sfxDie.stop();
-	   	sfxDie.play();
+		if(!this.IsDead)
+		{
+			// SFX
+		   	sfxDie.stop();
+		   	sfxDie.play();
+		   	
+		   	his.isDead = true;
+		}
 
-	   	this.isDead = true;
 	}
 
 	this.IsDead = function()
@@ -232,11 +260,11 @@ function Bird(imgName, sPosX, sPosY) {
 		// Simple straight ahead collision check. 
         // Would create a separate collision(bird, pipe) if I had more time.
         // Reached pipe
-        if(this.currPosX + this.w > p.X() && !p.HasScored())
+        if(boundingBox.x + boundingBox.w > p.X() && !p.HasScored())
         {
             //console.log("Reached pipe");
             // Is between pipes
-            if(this.currPosY > p.getTopY() + p.getHeight() && this.currPosY + this.h < p.getBottomY())
+            if(boundingBox.y > p.getTopY() + p.getHeight() && boundingBox.y + boundingBox.h < p.getBottomY())
             {
             	// cat ('')(*_*)('') this is a cat
             	//console.log("Is between pipes");
@@ -252,7 +280,7 @@ function Bird(imgName, sPosX, sPosY) {
             }
         }
         // Passed pipe and hasn't scored this pipe yet
-        if( (this.currPosX > p.X() + p.getWidth()) && !p.HasScored() )
+        if( (boundingBox.x > p.X() + p.getWidth()) && !p.HasScored() )
         {
             // Score point
             this.Score();
@@ -269,7 +297,7 @@ function Bird(imgName, sPosX, sPosY) {
 		// Simple straight ahead collision check. 
         // Would create a separate collision(bird, wall) if I had more time.
         // Reached wall
-        if(this.currPosX + this.w > w.X())
+        if(boundingBox.x + boundingBox.w > w.X())
         {
         	if(this.isDashing) w.DashKill();
             else this.Dead();
@@ -317,7 +345,7 @@ function Bird(imgName, sPosX, sPosY) {
 		// Simple straight ahead collision check. 
         // Would create a separate collision(bird, wall) if I had more time.
         // Reached wall
-        if(this.currPosX < boss.X() + boss.getWidth())
+        if(boundingBox.x < boss.X() + boss.getWidth())
         {
         	this.Dead();
             //return true;
