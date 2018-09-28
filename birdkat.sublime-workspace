@@ -223,6 +223,24 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "js/BirdKat/resources.js",
+			"settings":
+			{
+				"buffer_size": 1068,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/BirdKat/scenes/SplashScene.js",
+			"settings":
+			{
+				"buffer_size": 1868,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -256,16 +274,13 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/marcelo/Desktop/BirdKat",
-		"/Users/marcelo/Desktop/BirdKat/assets",
-		"/Users/marcelo/Desktop/BirdKat/assets/sounds",
-		"/Users/marcelo/Desktop/BirdKat/js",
-		"/Users/marcelo/Desktop/BirdKat/js/BirdKat",
-		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities",
-		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/scenes",
-		"/Users/marcelo/Desktop/BirdKat/js/engine",
-		"/Users/marcelo/Desktop/BirdKat/js/engine/data",
-		"/Users/marcelo/Desktop/BirdKat/js/engine/graphics"
+		"/Users/marcelo/Desktop/Game Dev Test - Marcelo de Barros - Lucky Kat",
+		"/Users/marcelo/Desktop/Game Dev Test - Marcelo de Barros - Lucky Kat/assets",
+		"/Users/marcelo/Desktop/Game Dev Test - Marcelo de Barros - Lucky Kat/js",
+		"/Users/marcelo/Desktop/Game Dev Test - Marcelo de Barros - Lucky Kat/js/BirdKat",
+		"/Users/marcelo/Desktop/Game Dev Test - Marcelo de Barros - Lucky Kat/js/BirdKat/scenes",
+		"/Users/marcelo/Desktop/Game Dev Test - Marcelo de Barros - Lucky Kat/js/engine",
+		"/Users/marcelo/Desktop/Game Dev Test - Marcelo de Barros - Lucky Kat/js/engine/scenes"
 	],
 	"file_history":
 	[
@@ -448,8 +463,75 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "js/BirdKat/resources.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1068,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								197,
+								197
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/BirdKat/scenes/SplashScene.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1868,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								269,
+								269
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 8.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"file": "assets/pressstart.png",
+					"semi_transient": true,
+					"stack_index": 1,
+					"type": "image"
+				}
 			]
 		}
 	],
