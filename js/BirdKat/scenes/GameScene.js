@@ -34,6 +34,7 @@ function GameScene() {
     // Game
     var restartTime = 0;
     var RESPAWN_TIME = 1000; // ms
+    var scoreBoard;
 
     this.Update = function (delta)
     {
@@ -77,7 +78,11 @@ function GameScene() {
         if(bossAtkTime < BOSS_ATK_TIME) 
         {
             bossAtkTime += delta;
-            if(bossAtkTime >= BOSS_ATK_TIME-WARNING_SPAWN_TIME) warningBoss = true;
+            if(bossAtkTime >= BOSS_ATK_TIME-WARNING_SPAWN_TIME)
+            {
+                warningBoss = true;
+                boss.Prepare();
+            }
         }
         else {
             boss.Atack();
@@ -181,6 +186,9 @@ function GameScene() {
 
         if(fireX < -5) tweenLeft = false;
         if(fireX > 5) tweenLeft = true;
+
+        // Warning sign animation
+        warningSign.Update(delta);
     }
 
     this.Draw = function ()
@@ -203,18 +211,22 @@ function GameScene() {
 
         graph.Draw(fire, fireX, graph.getHeight() - fire.height);
 
-        if(warningWall) graph.Draw(warningSign, 380, 40);
-        if(warningBoss) graph.Draw(warningSign, 100, 40);
+        if(warningWall) warningSign.Draw(380, 30);
+        if(warningBoss) warningSign.Draw(100, 30);
 
-        graph.DrawText("Score: "+ bird.getScore(), 200, 30, "white", "20px Verdana");
+        graph.Draw(scoreBoard, 170, 0);
+        graph.DrawText(bird.getScore(), 180, 30, "white", "20px Verdana");
     }
 
     this.OnEnter = function()
     {
         bgGame = new ParallaxBg();
 
-        warningSign = new Image();
-        warningSign = loader.getFile("warning");
+        warningSign = new Animation("warning", 64, 64, 300);
+        //warningSign = loader.getFile("warning-sheet");
+
+        scoreBoard = new Image();
+        scoreBoard = loader.getFile("scoreBoard");
 
         fire = new Image();
         fire = loader.getFile("fire");

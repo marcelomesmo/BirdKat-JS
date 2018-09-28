@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"cu",
+				"currPosY"
+			],
+			[
+				"bar",
+				"barImage"
+			],
+			[
+				"wea",
+				"weaponBar"
+			],
+			[
+				"score",
+				"scoreBoard"
+			],
+			[
+				"sprite",
+				"spriteHeight"
+			],
+			[
+				"sp",
+				"spriteHeight"
+			],
+			[
+				"spr",
+				"spriteWidth"
+			],
+			[
 				"warnin",
 				"warningSign"
 			],
@@ -42,10 +70,6 @@
 			[
 				"c",
 				"currPosY"
-			],
-			[
-				"cu",
-				"currPosX"
 			],
 			[
 				"has",
@@ -187,7 +211,33 @@
 			"file": "js/BirdKat/scenes/GameScene.js",
 			"settings":
 			{
-				"buffer_size": 5416,
+				"buffer_size": 5717,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1988,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/BirdKat/entities/bird.js",
+			"settings":
+			{
+				"buffer_size": 6340,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/BirdKat/resources.js",
+			"settings":
+			{
+				"buffer_size": 895,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -242,16 +292,21 @@
 	"file_history":
 	[
 		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities/dash.js",
+		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities/weapon.js",
+		"/Users/marcelo/Desktop/BirdKat/js/engine/graphics/graphics.js",
+		"/Users/marcelo/Desktop/BirdKat/js/engine/graphics/animation.js",
+		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities/parallaxbg.js",
+		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities/boss.js",
 		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities/bird.js",
+		"/Users/marcelo/Desktop/BirdKat/index.html",
+		"/Users/marcelo/Desktop/BirdKat/js/engine/graphics/notused-sprite.js",
+		"/Users/marcelo/Desktop/BirdKat/js/engine/graphics/sprite.js",
 		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/resources.js",
 		"/Users/marcelo/Desktop/BirdKat/js/engine/data/preloader.js",
 		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/scenes/GameScene.js",
-		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities/boss.js",
 		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities/pipe.js",
 		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities/wall.js",
-		"/Users/marcelo/Desktop/BirdKat/index.html",
 		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities/bullet.js",
-		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities/weapon.js",
 		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/GameScene.js",
 		"/Users/marcelo/Desktop/BirdKat/js/engine/entities/bird.js",
 		"/Users/marcelo/Desktop/BirdKat/js/engine/entities/weapon.js",
@@ -259,7 +314,6 @@
 		"/Users/marcelo/Desktop/BirdKat/js/engine/entities/bullet.js",
 		"/Users/marcelo/Desktop/BirdKat/js/engine/entities/pipe.js",
 		"/Users/marcelo/Desktop/BirdKat/js/engine/entities/parallaxbg.js",
-		"/Users/marcelo/Desktop/BirdKat/js/engine/graphics/graphics.js",
 		"/Users/marcelo/Desktop/BirdKat/js/engine/entities/dash.js",
 		"/Users/marcelo/Desktop/BirdKat/js/engine/input/touch.js",
 		"/Users/marcelo/Desktop/BirdKat/js/engine/input/inputmanager.js",
@@ -270,7 +324,6 @@
 		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/SplashScene.js",
 		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/MenuScene.js",
 		"/Users/marcelo/Desktop/BirdKat/js/resources/MenuScene.js",
-		"/Users/marcelo/Desktop/BirdKat/js/engine/graphics/sprite.js",
 		"/Users/marcelo/Desktop/BirdKat/js/engine/data/soundmanager.js",
 		"/Users/marcelo/Desktop/BirdKat/js/resources/GameScene.js",
 		"/Users/marcelo/Desktop/BirdKat/js/resources/SplashScene.js",
@@ -365,10 +418,7 @@
 		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/TileMap.cpp",
 		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Tile.h",
 		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Tile.cpp",
-		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Thread.h",
-		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Thread.cpp",
-		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Text.h",
-		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Text.cpp"
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Thread.h"
 	],
 	"find":
 	{
@@ -386,6 +436,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"image",
+			"warningSign",
 			"warning",
 			"clicked",
 			"startTime",
@@ -408,7 +460,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -417,15 +469,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5416,
+						"buffer_size": 5717,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4462,
-								4462
+								5663,
+								5663
 							]
 						],
 						"settings":
@@ -435,10 +487,99 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2631.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1988,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/BirdKat/entities/bird.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6340,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								178,
+								178
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/BirdKat/resources.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 895,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								31,
+								31
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -492,6 +633,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"index.html"
+			]
 		],
 		"width": 0.0
 	},

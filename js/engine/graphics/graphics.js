@@ -94,6 +94,11 @@ function Graphics()
     	context.fillText(text,x,y);
 	}
 
+	this.setColor = function(color)
+	{
+		context.fillStyle = color;
+	}
+
 	this.setAlpha = function(a)
 	{
 		context.globalAlpha = a;
@@ -120,6 +125,22 @@ function Graphics()
 	this.Draw = function(img, x, y)
 	{
 		context.drawImage(img, x, y);
+	}
+
+	// Context drawImage
+	/*
+		sx	SpriteSheet x
+		sy	SpriteSheet y
+		sw	Sprite width
+		sh	Sprite height
+		dx	Target x
+		dy	Target y
+	*/
+	// Could use the same Draw
+	this.DrawAnimation = function(img, sx, sy, sw, sh, dx, dy)
+	{
+		// I am not allowing resizing for now. Target width and target height = sprite width and sprite height
+		context.drawImage(img, sx, sy, sw, sh, dx, dy, sw, sh);
 	}
 
 	this.getHeight = function()

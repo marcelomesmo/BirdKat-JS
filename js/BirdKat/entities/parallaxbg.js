@@ -33,7 +33,7 @@ function ParallaxBg()
 	}
 	this.Draw = function ()
     {
-    	graph.Draw(bg_far, farX, screen_height - bg_far.height);
+    	graph.Draw(bg_far, farX, 0);
     	graph.Draw(bg_mid, midX, screen_height - bg_mid.height);
     	graph.Draw(bg_front, frontX, screen_height - bg_front.height);
     }

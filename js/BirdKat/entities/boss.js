@@ -48,6 +48,7 @@ function Boss() {
 	        	this.currX = -5;	// Cap movement
 	        	this.isAtacking = false;
 	        	this.retreat = true;
+				image = loader.getFile("boss");
 	        }
 	    }
 
@@ -75,6 +76,7 @@ function Boss() {
 
 		this.isAtacking = false;
 		this.retreat = false;
+		image = loader.getFile("boss");
 	}
 
 	this.Draw = function()
@@ -90,6 +92,11 @@ function Boss() {
 	this.Atack = function()
 	{
 		this.isAtacking = true;
+	}
+
+	this.Prepare = function()
+	{
+		image = loader.getFile("bossAtk");
 	}
 
 	this.X = function()

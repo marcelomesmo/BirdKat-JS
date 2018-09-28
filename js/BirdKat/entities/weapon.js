@@ -4,6 +4,8 @@ function Weapon() {
 
 	var image = loader.getFile("weapon");
 
+	var barImage = new Animation("weaponBar", 72, 21, 500);
+
 	var totalCharges = 10;
 	var weaponCharges = 10;
 
@@ -37,18 +39,24 @@ function Weapon() {
                 bullets.splice(removeBullet, 1);
             }
         }
+
+		barImage.Update(delta);
 	}
 
 	this.Draw = function(x, y)
 	{
 		graph.Draw(image, x, y);
 
-		graph.DrawRect(x + image.width + 10, y + 4, barWidth * weaponCharges/totalCharges, barHeight);
+		graph.setColor("#ed5259");
+		graph.DrawRect(x + image.width + 10, y + 8, barWidth * weaponCharges/totalCharges, barHeight);
+		graph.setColor("black");
 
 		for(let b of bullets)
         {
         	b.Draw();
         }
+
+        if(weaponCharges == totalCharges) barImage.Draw(x + image.width+7, y+2);
 	}
 
 	this.Shoot = function(x, y)

@@ -126,8 +126,8 @@ function Bird(imgName, sPosX, sPosY) {
 	{
 		graph.Draw(image, this.currPosX, this.currPosY);
 
-		weapon.Draw(10, 10);
-		dash.Draw(10, 26);
+		weapon.Draw(10, 0);
+		dash.Draw(10, 28);
 
 		// Dash trail
 		if(this.isDashing)

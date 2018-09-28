@@ -3,6 +3,8 @@ function Dash() {
 
 	var image = loader.getFile("dash");
 
+	var barImage = new Animation("dashBar", 72, 21, 300);
+
 	var totalCharges = 1;
 	var dashCharges = 1;
 
@@ -24,14 +26,23 @@ function Dash() {
 			dashCharges = 1;
 			reloadTime = 0;
 		}
+
+		barImage.Update(delta);
 	}
 
 	this.Draw = function(x, y)
 	{
 		graph.Draw(image, x, y);
 
-		if(dashCharges == totalCharges) graph.DrawRect(x + image.width + 10, y+4, barWidth, barHeight);
-		else graph.DrawRect(x + image.width + 10, y+4, barWidth * reloadTime/RELOAD_CD, barHeight);
+		graph.setColor("#41f3fc");
+		if(dashCharges == totalCharges) 
+		{
+			graph.DrawRect(x + image.width + 10, y+8, barWidth, barHeight);
+
+			barImage.Draw(x + image.width + 4, y+2);
+		}
+		else graph.DrawRect(x + image.width + 10, y+8, barWidth * reloadTime/RELOAD_CD, barHeight);
+		graph.setColor("black");
 	}
 
 	this.isAvailable = function()
