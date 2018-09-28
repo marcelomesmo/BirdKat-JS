@@ -8,7 +8,7 @@ function Preloader ()
 	    var assetCount = Object.keys(imageList).length;
 		var completedCount = 0;
 		// Count Assets
-		console.log("Total assets: " + assetCount);	
+		//console.log("Total assets: " + assetCount);	
 
 		for(let i = 0; i < assetCount; i++)
 		{
@@ -17,15 +17,10 @@ function Preloader ()
 			this.preloadImage(path, reference, function() 
 		 	{
 				completedCount++;
-				console.log("Asset loaded. Completion: " + (100 / assetCount) * completedCount);
+				//console.log("Asset loaded. Completion: " + (100 / assetCount) * completedCount);
 				progressCallback((100 / assetCount) * completedCount);
 	    	});
 		};
-
-		/*handleProgress = function() 
-		{
-			return ((100 / assetCount) * completedCount); // Curr Progress
-		}.bind(this)*/
 	}
 
 
@@ -34,7 +29,7 @@ function Preloader ()
 	    anImage.src = path;
 	    anImage.name = reference;
 	    	gameImages.push(anImage);
-	    	//console.log("Curr asset " + gameImages.length + " src: " + anImage.src + " named " + anImage.name);
+	    	console.log("Curr asset " + gameImages.length + " src: " + anImage.src + " named " + anImage.name);
 	    anImage.onload = anImageLoadedCallback;
 	}
 

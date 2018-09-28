@@ -16,6 +16,7 @@ var imageList = {
     bird: "assets/bird.png",
     birdFly: "assets/bird-sheet-fly.png",
     birdOff: "assets/bird-sheet-off.png",
+    //birdDead: "assets/birdDead.png",
     weapon: "assets/weapon.png",
     weaponBar: "assets/weaponBar-sheet.png",
     bullet: "assets/bullet.png",

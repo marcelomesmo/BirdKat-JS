@@ -1,15 +1,12 @@
-// CONST
-var JUMPSTREGHT = -2;
-var GRAVITY = 0.1;
-
 /*
 	Our pretty much awesome BirdKat shooter.
 
 */
-
 function Bird(imgName, sPosX, sPosY) {
 
 	var image = loader.getFile(imgName);
+
+	//var imageDead = loader.getFile("birdDead");
 
 	var animFly = new Animation("birdFly", 47, 51, 300);
 	var animOff = new Animation("birdOff", 47, 51, 300);
@@ -23,6 +20,10 @@ function Bird(imgName, sPosX, sPosY) {
 	// Absolute positions
 	var startPosX, startPosY;
 	var currPosX, currPosY;
+
+	// CONST
+	var JUMPSTREGHT = -2;
+	var GRAVITY = 0.1;
 
 	var velX;
 	var velY;
@@ -165,8 +166,11 @@ function Bird(imgName, sPosX, sPosY) {
 			graph.setAlpha(1);
 		}
 
+		// Could replace this: spawn explosion, change animation, etc...
+		//if(this.isDead) graph.draw(imageDead, graph.getWidth()/2 - imageDead.width/2, graph.getHeight()/2 - imageDead.height/2)
+
 		// DEBUG MODE : BOUNDING BOX
-		//graph.DrawRect(boundingBox.x, boundingBox.y, boundingBox.w, boundingBox.h);
+		//if(DebugMode) graph.DrawRect(boundingBox.x, boundingBox.y, boundingBox.w, boundingBox.h);
 	}
 
 
@@ -185,14 +189,14 @@ function Bird(imgName, sPosX, sPosY) {
 
 	this.Dead = function()
 	{
-		if(!this.IsDead)
+		if(!this.isDead)
 		{
 			// SFX
 		   	sfxDie.stop();
 		   	sfxDie.play();
 		   	
-		   	his.isDead = true;
 		}
+		this.isDead = true;
 
 	}
 
@@ -262,7 +266,7 @@ function Bird(imgName, sPosX, sPosY) {
         // Reached pipe
         if(boundingBox.x + boundingBox.w > p.X() && !p.HasScored())
         {
-            //console.log("Reached pipe");
+            console.log("Cat at: "+ boundingBox.x + " " + boundingBox.y);
             // Is between pipes
             if(boundingBox.y > p.getTopY() + p.getHeight() && boundingBox.y + boundingBox.h < p.getBottomY())
             {

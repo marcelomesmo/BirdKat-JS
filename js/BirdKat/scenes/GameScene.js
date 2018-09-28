@@ -225,8 +225,8 @@ function GameScene() {
 
     this.OnEnter = function()
     {
-
         musicMenu.stop();
+        musicGame.stop();
         musicGame.play();
 
         bgGame = new ParallaxBg();
