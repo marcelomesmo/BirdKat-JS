@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"curr",
+				"currY"
+			],
+			[
 				"image",
 				"imageDead"
 			],
@@ -18,10 +22,6 @@
 			[
 				"off",
 				"offsetX"
-			],
-			[
-				"curr",
-				"currPosY"
 			],
 			[
 				"cur",
@@ -224,19 +224,28 @@
 	"buffers":
 	[
 		{
-			"file": "js/BirdKat/resources.js",
+			"file": "js/BirdKat/scenes/GameScene.js",
 			"settings":
 			{
-				"buffer_size": 1068,
+				"buffer_size": 7080,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "js/BirdKat/scenes/SplashScene.js",
+			"file": "js/engine/graphics/graphics.js",
 			"settings":
 			{
-				"buffer_size": 1868,
+				"buffer_size": 4236,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/BirdKat/entities/wall.js",
+			"settings":
+			{
+				"buffer_size": 1179,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -278,12 +287,21 @@
 		"/Users/marcelo/Desktop/Game Dev Test - Marcelo de Barros - Lucky Kat/assets",
 		"/Users/marcelo/Desktop/Game Dev Test - Marcelo de Barros - Lucky Kat/js",
 		"/Users/marcelo/Desktop/Game Dev Test - Marcelo de Barros - Lucky Kat/js/BirdKat",
+		"/Users/marcelo/Desktop/Game Dev Test - Marcelo de Barros - Lucky Kat/js/BirdKat/entities",
 		"/Users/marcelo/Desktop/Game Dev Test - Marcelo de Barros - Lucky Kat/js/BirdKat/scenes",
 		"/Users/marcelo/Desktop/Game Dev Test - Marcelo de Barros - Lucky Kat/js/engine",
+		"/Users/marcelo/Desktop/Game Dev Test - Marcelo de Barros - Lucky Kat/js/engine/data",
+		"/Users/marcelo/Desktop/Game Dev Test - Marcelo de Barros - Lucky Kat/js/engine/graphics",
 		"/Users/marcelo/Desktop/Game Dev Test - Marcelo de Barros - Lucky Kat/js/engine/scenes"
 	],
 	"file_history":
 	[
+		"/Users/marcelo/Desktop/Game Dev Test - Marcelo de Barros - Lucky Kat/js/BirdKat/entities/boss.js",
+		"/Users/marcelo/Desktop/Game Dev Test - Marcelo de Barros - Lucky Kat/js/engine/graphics/graphics.js",
+		"/Users/marcelo/Desktop/Game Dev Test - Marcelo de Barros - Lucky Kat/js/BirdKat/scenes/SplashScene.js",
+		"/Users/marcelo/Desktop/Game Dev Test - Marcelo de Barros - Lucky Kat/js/BirdKat/resources.js",
+		"/Users/marcelo/Desktop/Game Dev Test - Marcelo de Barros - Lucky Kat/index.html",
+		"/Users/marcelo/Desktop/Game Dev Test - Marcelo de Barros - Lucky Kat/assets/manifest.json",
 		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities/weapon.js",
 		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/entities/bird.js",
 		"/Users/marcelo/Desktop/BirdKat/js/BirdKat/scenes/GameScene.js",
@@ -405,13 +423,7 @@
 		"/Volumes/MARCELO/Marcelo/GitHub/Reis/Reis/Reis.h",
 		"/Volumes/MARCELO/Marcelo/GitHub/Reis/Reis/input/Input.h",
 		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/TmxMapObject.h",
-		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/TmxMapObject.cpp",
-		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/TmxMap.h",
-		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/TmxMap.cpp",
-		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Timer.h",
-		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/Timer.cpp",
-		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/TileSet.h",
-		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/TileSet.cpp"
+		"/Volumes/MARCELO/Marcelo/GitHub/Backups - NAO UPAR/RootsSDL/Roots/TmxMapObject.cpp"
 	],
 	"find":
 	{
@@ -463,24 +475,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "js/BirdKat/resources.js",
+					"file": "js/BirdKat/scenes/GameScene.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1068,
+						"buffer_size": 7080,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								197,
-								197
+								5899,
+								5899
 							]
 						],
 						"settings":
@@ -490,47 +502,69 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3329.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "js/BirdKat/scenes/SplashScene.js",
+					"file": "js/engine/graphics/graphics.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1868,
+						"buffer_size": 4236,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								269,
-								269
+								3232,
+								3232
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 8.0,
-						"translation.y": 0.0,
+						"translation.x": 0.0,
+						"translation.y": 1732.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"file": "assets/pressstart.png",
-					"semi_transient": true,
-					"stack_index": 1,
-					"type": "image"
+					"buffer": 2,
+					"file": "js/BirdKat/entities/wall.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1179,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								650,
+								650
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 260.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
 				}
 			]
 		}
