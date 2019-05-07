@@ -1,9 +1,16 @@
-# 2DJS
-JavaScript 2D Framework
+# BirdKat  
+  
+Quick game experiment made in Javascript.  
 
-[BirdKAT](https://marcelomesmo.com/games/BirdKAT/) : Game example added.    
+Space or Mouse : Flap  
+D : Dash  
+
+Watch out for warnings.  
+  
+Play at: [BirdKAT](https://marcelomesmo.com/games/BirdKAT/)  
     
     
     
-DISCLAIMER:   
+    
+Disclaimer:   
 Sounds from opengameart.org.  
