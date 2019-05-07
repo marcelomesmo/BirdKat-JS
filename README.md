@@ -14,3 +14,4 @@ Play at: [BirdKAT](https://marcelomesmo.com/games/BirdKAT/)
     
 Disclaimer:   
 Sounds from opengameart.org.  
+Hitboxs are insane, sorry.  
